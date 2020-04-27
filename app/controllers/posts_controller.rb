@@ -18,6 +18,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find_by(id: params[:id])
+    # params[:content]に上書き
     @post.content = params[:content]
     if @post.save
       redirect_to("/posts/index")
