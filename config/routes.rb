@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 # userのルーティング
-  get 'signup' => "users#new"
-  get 'users/index' => "users#index"
-  get 'users/:id' => "users#show"
+  post 'users/create' => 'users#create'
+  get 'signup' => 'users#new'
+  get 'users/index' => 'users#index'
+  get 'users/:id' => 'users#show'
+
 #postsのルーティング
   get 'posts/index' => "posts#index"
   get 'posts/new' => "posts#new"
