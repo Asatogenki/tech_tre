@@ -128,7 +128,7 @@
     background-repeat: no-repeat;
     background-position: center 50%;
     background-size: cover;
-    background-image: image-url("/assets/landscape-4895932_1920.jpg");
+    background-image: image-url("landscape-4895932_1920.jpg");
   }
   
   .top-message {
@@ -166,7 +166,7 @@
   
   .about-img {
     width: 84%;
-    background-image: image-url("/assets/tweets.png");
+    // background-image: image-url("tweets.png");
   }
   
   /* フォーム================================ */
