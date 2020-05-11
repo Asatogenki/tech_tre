@@ -1,28 +1,28 @@
-# Rails.application.routes.draw do
-#   post "likes/:post_id/create" => "likes#create"
-#   post "likes/:post_id/destroy" => "likes#destroy"
-# # loginのルーティング
-#   get "login" => "users#login_form"
-#   post "login" => "users#login"
-#   post "logout" => "users#logout"
-#   get "users/:id/likes" => "users#likes"
-# # userのルーティング
-#   post "users/:id/update" => "users#update"
-#   get 'users/:id/edit' => 'users#edit'
-#   post 'users/create' => 'users#create'
-#   get 'signup' => 'users#new'
-#   get 'users/index' => 'users#index'
-#   get 'users/:id' => 'users#show'
+Rails.application.routes.draw do
+  post "likes/:post_id/create" => "likes#create"
+  post "likes/:post_id/destroy" => "likes#destroy"
+# loginのルーティング
+  get "login" => "users#login_form"
+  post "login" => "users#login"
+  post "logout" => "users#logout"
+  get "users/:id/likes" => "users#likes"
+# userのルーティング
+  post "users/:id/update" => "users#update"
+  get 'users/:id/edit' => 'users#edit'
+  post 'users/create' => 'users#create'
+  get 'signup' => 'users#new'
+  get 'users/index' => 'users#index'
+  get 'users/:id' => 'users#show'
 
-# #postsのルーティング
-#   get 'posts/index' => "posts#index"
-#   get 'posts/new' => "posts#new"
-#   get 'posts/:id' => "posts#show"
-#   post 'posts/create' => "posts#create"
-#   get 'posts/:id/edit' => "posts#edit"
-#   post 'posts/:id/update' => "posts#update"
-#   post 'posts/:id/destroy' => "posts#destroy"
-# #homeのルーティング  
-#   get '/' => "home#top"
-#   get 'about' => "home#about"
-# end
+#postsのルーティング
+  get 'posts/index' => "posts#index"
+  get 'posts/new' => "posts#new"
+  get 'posts/:id' => "posts#show"
+  post 'posts/create' => "posts#create"
+  get 'posts/:id/edit' => "posts#edit"
+  post 'posts/:id/update' => "posts#update"
+  post 'posts/:id/destroy' => "posts#destroy"
+#homeのルーティング  
+  get '/' => "home#top"
+  get 'about' => "home#about"
+end
